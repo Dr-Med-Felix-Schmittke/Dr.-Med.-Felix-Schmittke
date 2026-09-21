@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Med. Felix Schmittke</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --card:#fff; --text:#17202a; --muted:#667085;
+    --line:#e5e7eb; --accent:#1f5f8b; --accent-soft:#eaf3f9;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+  .top{background:#fff;border-bottom:1px solid var(--line)}
+  .wrap{max-width:1080px;margin:auto;padding:0 24px}
+  header{height:72px;display:flex;align-items:center;justify-content:space-between}
+  .brand{font-weight:700;font-size:18px;color:var(--accent)}
+  .nav{color:var(--muted);font-size:14px}
+  main{padding:34px 0 70px}
+  .crumbs{font-size:14px;color:var(--muted);margin-bottom:28px}
+  .crumbs span{color:#98a2b3;margin:0 8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 5px 20px rgba(16,24,40,.05);overflow:hidden}
+  .hero{padding:36px 38px;border-bottom:1px solid var(--line)}
+  h1{font-size:32px;line-height:1.2;margin:0 0 10px}
+  .org{font-size:17px;color:var(--muted);max-width:720px}
+  .grid{display:grid;grid-template-columns:1fr 1fr}
+  .section{padding:30px 38px;border-bottom:1px solid var(--line)}
+  .section:nth-child(odd){border-right:1px solid var(--line)}
+  .section h2{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#667085;margin:0 0 16px}
+  .label{font-size:12px;color:#98a2b3;text-transform:uppercase;letter-spacing:.05em;margin-bottom:7px}
+  .value{font-size:17px;font-weight:600}
+  .phone{display:inline-block;color:var(--accent);text-decoration:none;font-size:19px;font-weight:700}
+  .note{color:#475467;line-height:1.6}
+  .tags{display:flex;flex-wrap:wrap;gap:10px}
+  .tag{background:var(--accent-soft);color:var(--accent);padding:9px 13px;border-radius:999px;font-size:14px;font-weight:600}
+  footer{padding:24px 0;color:#98a2b3;font-size:13px}
+  @media(max-width:700px){
+    .wrap{padding:0 16px}.grid{grid-template-columns:1fr}.section:nth-child(odd){border-right:0}
+    .hero,.section{padding:26px 22px}h1{font-size:26px}.nav{display:none}
+  }
+</style>
+</head>
+<body>
+  <div class="top">
+    <div class="wrap">
+      <header>
+        <div class="brand">Adressen</div>
+        <div class="nav">Medizinische Versorgung · Diagnostik · Spezialsprechstunde</div>
+      </header>
+    </div>
+  </div>
+
+  <main>
+    <div class="wrap">
+      <div class="crumbs">Startseite <span>›</span> Adressen <span>›</span> Dr. Med. Felix Schmittke</div>
+
+      <article class="card">
+        <section class="hero">
+          <h1>Dr. Med. Felix Schmittke</h1>
+          <div class="org">Frankfurter Institut für Klinische Krebsforschung IKF GmbH</div>
+        </section>
+
+        <div class="grid">
+          <section class="section">
+            <h2>Ansprechpartner</h2>
+            <div class="label">Name</div>
+            <div class="value">Dr. Med. Felix Schmittke</div>
+          </section>
+
+          <section class="section">
+            <h2>Einrichtung</h2>
+            <div class="label">Krankenhaus</div>
+            <div class="value">Frankfurter Institut für Klinische Krebsforschung IKF GmbH</div>
+          </section>
+
+          <section class="section">
+            <h2>Kontakt</h2>
+            <div class="label">Telefon</div>
+            <a class="phone" href="tel:+491785515643">+49 1785515643</a>
+          </section>
+
+          <section class="section">
+            <h2>Informationen</h2>
+            <div class="label">Kontaktaufnahme</div>
+            <div class="note">Bitte telefonisch Kontakt aufnehmen.</div>
+          </section>
+
+          <section class="section" style="grid-column:1/-1">
+            <h2>Fachgebiete</h2>
+            <div class="tags">
+              <div class="tag">Medizinische Versorgung</div>
+              <div class="tag">Diagnostik</div>
+              <div class="tag">Spezialsprechstunde</div>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <footer>© 2026 Frankfurter Institut für Klinische Krebsforschung IKF GmbH</footer>
+    </div>
+  </main>
+</body>
+</html>
